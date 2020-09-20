@@ -1,0 +1,25 @@
+{% import 'macros/svgs.html' as svgs %}
+
+{% macro render() %}
+<div class="c-demo-modal" data-demo-modal>
+  <div class="c-demo-modal__content" data-demo-modal-content>
+    <h3 class="o-headline c-demo-modal__headline">Demostracion del Museo arqueologico Eliecer Silva Celis! </h3>
+    <ul class="o-body c-demo-modal__list">
+      <li><strong>Nota</strong>: La experiencia de edición está destinada a usuarios de escritorio</li>
+      <li>Utilice el mouse para buscar e interactuar con contenido editable.</li>
+      <li>Utilizar el <span class="c-demo-modal__pointer-link" data-demo-modal-pointer-link="pageMenu">Menú de página</span> en la esquina inferior izquierda para crear nuevas páginas.</li>
+      <li>Utilizar el <span class="c-demo-modal__pointer-link" data-demo-modal-pointer-link="adminBar">Barra de administración</span> arriba para editar contenido global.</li>
+      <li>Agregue contenido usando el <strong>Plus</strong> botones (mostrados a continuación).</li>
+    </ul>
+    {# js will toggle this visible if needed, otherwise don't load it #}
+    <img data-demo-modal-gif class="c-demo-modal__gif" src="/images/apos-addcontent.gif" alt="Adding content to ApostropheCMS" />
+    <button class="c-demo-modal__close-button" data-demo-modal-close>¡Entendido! ¡Empecemos a usar la web!</button>
+  </div>
+  <div class="c-demo-modal__pointer-container c-demo-modal__pointer-container--admin-bar" data-demo-modal-pointer="adminBar">
+    {{ svgs.arrowUp() }}
+  </div>
+  <div class="c-demo-modal__pointer-container c-demo-modal__pointer-container--page-menu" data-demo-modal-pointer="pageMenu">
+    {{ svgs.arrowDown() }}
+  </div>
+</div>
+{% endmacro %}

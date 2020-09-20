@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"Museo-Sol.aposLocks"}],"uuid":"bc38100aea1d4d59972857c0809609c0"}

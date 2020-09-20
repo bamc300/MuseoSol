@@ -1,0 +1,28 @@
+{% import 'navigation.html' as navigation %}
+{% import 'macros/svgs.html' as svgs %}
+
+{% macro render(home, currentPage, images) %}
+  <footer class="o-background-light c-footer">
+    <div class="o-container c-footer__inner">
+      <div class="c-footer__nav">
+        {{ navigation.render(home, currentPage, images) }}
+      </div>
+      <div class="o-body o-body--small c-footer__credit">
+        <a class="c-footer__logo" href="http://localhost:3000/login">
+        {{ svgs.apostropheLogo() }}
+        <a><h2>Nuestras redes sociales: </h2></a>
+        <font size="100px"><a target="_blank" class="c-footer__apostrophe-link" href="https://es-la.facebook.com/museoarqueologico.eliecersilvacelis/"><i class="fa fa-whatsapp"></i></a></font>
+        <font size="100px"><a target="_blank" class="c-footer__apostrophe-link" href="https://es-la.facebook.com/museoarqueologico.eliecersilvacelis/"><i class="fa fa-facebook"></i></a></font>
+        <font size="100px"><a target="_blank" class="c-footer__apostrophe-link" href="#"><i class="fa fa-twitter"></i></a></font>
+        <font size="100px"><a target="_blank" class="c-footer__apostrophe-link" href="https://www.youtube.com/channel/UCVcp7FTHaS5uGiYoEAo2itA/featured"><i class="fa fa-youtube"></i></a></font>
+        <font size="100px"><a target="_blank" class="c-footer__apostrophe-link" href="#"><i class="fa fa-instagram"></i></a></font>
+        <font size="100px"><a target="_blank" class="c-footer__apostrophe-link" href="http://www.uptc.edu.co/vie/extension/unidades/museos_uptc/mus02_gal"><i class="fa fa-university"></i></a></font>
+        <a><h2>Derechos Reservados: </h2></a>
+        <a><h3>Liseth Juliana Perez </h3></a>
+        <a><h3>Miguel Andres Palacios </h3></a>
+        <a><h3>Lina Maria Ramirez </h3></a>
+        <a><h3>Bryant Alfonso Moncada </h3></a>
+        </div>
+    </div>
+  </footer>
+{% endmacro %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% import "macros/masthead.html" as masthead %}
+{% import "macros/peer-nav.html" as peerNav %}
+{% set page = data.page %}
+
+{% if page.peerNav !== false %}
+  {% set wrapper = 'o-container' %}
+  {% set widgets = apos.helpers.narrowWidgets %}
+{% else %}
+  {% set wrapper = 'o-wrapper' %}
+  {% set widgets = apos.helpers.baseWidgets %}
+{% endif %}
+
+{% block main %}
+  {% if page.masthead !== false %}
+    <div data-apos-ajax-context="blog">
+        <iframe width="1340" height="600" src="https://datastudio.google.com/embed/reporting/f3ac9808-9c24-4a6c-918d-b8c12a366d9f/page/nXDGB" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <font size="100px"><a target="_blank" class="c-footer__apostrophe-link" href="https://analytics.google.com/analytics/web/#/realtime/rt-overview/a177654235w245884998p228539071/">Analisis Completo</a>  
+  </div>
+  {% endif %}
+{% endblock %}

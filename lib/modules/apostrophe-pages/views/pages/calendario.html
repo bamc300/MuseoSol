@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% import 'macros/masthead.html' as masthead %}
+
+{% block main %}
+  {{ masthead.render(data.page, { class: 'o-mb-0' }) }}
+
+  <div data-apos-ajax-context="blog">
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23F6BF26&amp;ctz=America%2FBogota&amp;src=Y19qbGhuY2l0MjJzYTdrcWh0bDJhcHBiaGdsb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZXMuY28jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23D50000&amp;color=%230B8043" style="border:solid 1px #777" width="1340" height="600" frameborder="0" scrolling="no"></iframe>
+    
+    {# <iframe width="1340" height="600" src="https://datastudio.google.com/embed/reporting/f3ac9808-9c24-4a6c-918d-b8c12a366d9f/page/nXDGB" frameborder="0" style="border:0" allowfullscreen></iframe>  
+   #}
+  </div>
+{% endblock %}
